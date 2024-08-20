@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeancripter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="./assets/Frame 6.png" alt="Logo ALURA">
+        </a>
+    </header>
+
+    <main>
+        <section class="apresentacao">
+            <h1>Prazer eu sou o Jeancripter</h1>
+
+            <p>Escreva aqui algo secreto para deixar indecifrável.</p>
+            <p>Ninguém descobrirá seus segredos!!!</p>
+
+            <textarea class="apresentacao__texto" cols="41" rows="4" placeholder="Escreva seu texto"></textarea>
+
+
+            <div class="informacao">
+                <h6><img src="./assets/exclamacao.png" alt="ponto de exclamação para provocar atenção"> Apenas letras
+                    minúsculas e sem acento.</h6>
+            </div>
+
+            <div class="apresentacao__botoes">
+                <button class="btn-criptografar" onclick="btnCriptografar()">Criptografar</button>
+                <button class="btn-descriptografar" onclick="btnDescriptografar()">Descriptografar</button>
+            </div>
+
+        </section>
+
+        <section class="mensagem-transformada">
+
+            <input class="mensagem" type="text" placeholder=" " oninput="validarInput(this)">
+
+            <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+        </section>
+        
+    </main>
+    <script src="script.js"> </script>
+</body>
+
+</html>
